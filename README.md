@@ -8,13 +8,13 @@ Install
 
 ### Windows
 
-~~~shell
+~~~sh
 git clone https://github.com/koma75/nvConfig.git %LOCALAPPDATA%\nvim && nvim
 ~~~
 
 Some pre-requisites should be installed as well.
 
-~~~shell
+~~~sh
 choco install llvm zig
 ~~~
 
@@ -25,7 +25,7 @@ Install Nerdfont compatible fonts.  For Japanese support,
 
 You can install using chocolatey in Windows.
 
-~~~shell
+~~~sh
 choco install font-hackgen-nerd
 ~~~
 
@@ -52,11 +52,11 @@ im-select must be installed prior to use.
 
 Prerequisite is to install clang or zig compilers.
 
-~~~ shell
+~~~ sh
 choco install llvm
 ~~~
 
-~~~ shell
+~~~ sh
 choco install zig
 ~~~
 
