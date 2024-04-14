@@ -13,6 +13,8 @@ git clone https://github.com/koma75/nvConfig.git %LOCALAPPDATA%\nvim && nvim
 Plugins
 ------------------------------------------------------------------------
 
+Some are not installed yet.
+
 ### im-select
 
 * https://github.com/keaising/im-select.nvim
@@ -45,12 +47,14 @@ Plugins
 * https://github.com/lewis6991/gitsigns.nvim
 * tpope/vim-fugitive
 
-### skin
+### theme
 
 * https://github.com/neanias/everforest-nvim
 
 References
 ------------------------------------------------------------------------
+
+Resources I refered to other than the plugin documents are as follows.
 
 * https://www.youtube.com/watch?v=zHTeCSVAFNY&list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn
     * https://github.com/cpow/neovim-for-newbs
