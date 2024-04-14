@@ -76,3 +76,61 @@ Resources I refered to other than the plugin documents are as follows.
 
 * https://www.youtube.com/watch?v=zHTeCSVAFNY&list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn
     * https://github.com/cpow/neovim-for-newbs
+
+### Windows context menu
+
+To add context menu, use the following (edited to be compatible with chocolaty neovim install).
+Original registry is [here](https://gist.github.com/JAffleck/2ba6ca0bd0d5545fd17c396357b9abf0):w
+
+~~~ reg
+Windows Registry Editor Version 5.00
+
+
+
+;; Neovim-Qt
+
+[HKEY_CLASSES_ROOT\*\shell\nvim-qt]
+@="Edit with Neovim-Qt"
+"Icon"="\"C:\\tools\\neovim\\nvim-win64\\bin\\nvim-qt.exe\""
+
+[HKEY_CLASSES_ROOT\*\shell\nvim-qt\command]
+@="\"C:\\tools\\neovim\\nvim-win64\\bin\\vim-qt.exe\" \"%1\""
+
+[HKEY_CLASSES_ROOT\Directory\shell\nvim-qt]
+@="Open with Neovim-Qt"
+"Icon"="\"C:\\tools\\neovim\\nvim-win64\\bin\\nvim-qt.exe\""
+
+[HKEY_CLASSES_ROOT\Directory\shell\nvim-qt\command]
+@="\"C:\\tools\\neovim\\nvim-win64\\bin\\nvim-qt.exe\" \"%1\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\nvim-qt]
+@="Open Neovim-Qt here"
+"Icon"="\"C:\\tools\\neovim\\nvim-win64\\bin\\nvim-qt.exe\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\nvim-qt\command]
+@="\"C:\\tools\\neovim\\nvim-win64\\bin\\nvim-qt.exe\" \"%v\""
+
+
+;; NeoVim
+
+[HKEY_CLASSES_ROOT\*\shell\nvim]
+@="Edit with Neovim"
+"Icon"="\"C:\\tools\\neovim\\nvim-win64\\bin\\nvim-qt.exe\""
+
+[HKEY_CLASSES_ROOT\*\shell\nvim\command]
+@="wt -p \"Windows PowerShell\" --title Neovim C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\directory\shell\nvim]
+@="Open with Neovim"
+"Icon"="\"C:\\tools\\neovim\\nvim-win64\\bin\\nvim-qt.exe\""
+
+[HKEY_CLASSES_ROOT\directory\shell\nvim\command]
+@="wt -p \"Windows PowerShell\" --title Neovim C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe \"%v\""
+
+[HKEY_CLASSES_ROOT\directory\background\shell\nvim]
+@="Open Neovim here"
+"Icon"="\"C:\\tools\\neovim\\nvim-win64\\bin\\nvim-qt.exe\""
+
+[HKEY_CLASSES_ROOT\directory\background\shell\nvim\command]
+@="wt -p \"Windows PowerShell\" --title Neovim C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe \"%v\""
+~~~
