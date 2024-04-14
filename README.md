@@ -79,6 +79,11 @@ choco install zig
 
 * https://github.com/neanias/everforest-nvim
 
+### spzenhan
+
+* https://zenn.dev/kaz399/articles/50b5f2fdc2afcf
+* https://github.com/kaz399/spzenhan.vim
+
 References
 ------------------------------------------------------------------------
 
