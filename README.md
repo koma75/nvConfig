@@ -12,6 +12,23 @@ Install
 git clone https://github.com/koma75/nvConfig.git %LOCALAPPDATA%\nvim && nvim
 ~~~
 
+Some pre-requisites should be installed as well.
+
+~~~shell
+choco install llvm zig
+~~~
+
+### Fonts
+
+Install Nerdfont compatible fonts.  For Japanese support,
+[HackGen NF](https://github.com/yuru7/HackGen) can be used.
+
+You can install using chocolatey in Windows.
+
+~~~shell
+choco install font-hackgen-nerd
+~~~
+
 Plugins
 ------------------------------------------------------------------------
 
