@@ -65,6 +65,10 @@ choco install zig
 * https://github.com/lewis6991/gitsigns.nvim
 * tpope/vim-fugitive
 
+### indent-blackline
+
+* https://github.com/lukas-reineke/indent-blankline.nvim
+
 ### theme
 
 * https://github.com/neanias/everforest-nvim
