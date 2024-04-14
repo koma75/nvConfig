@@ -1,0 +1,2 @@
+# nvConfig
+personal neovim settings
