@@ -6,6 +6,8 @@ personal neovim settings
 Install
 ------------------------------------------------------------------------
 
+### Windows
+
 ~~~ shell
 git clone https://github.com/koma75/nvConfig.git %LOCALAPPDATA%\nvim && nvim
 ~~~
@@ -19,18 +21,34 @@ Some are not installed yet.
 
 * https://github.com/keaising/im-select.nvim
 
+#### Pre-requisite
+
+im-select must be installed prior to use.
+
 ### treesitter
 
 * https://github.com/nvim-treesitter/nvim-treesitter
+
+#### For Windows
+
+Prerequisite is to install clang or zig compilers.
+
+~~~ shell
+choco install llvm
+~~~
+
+~~~ shell
+choco install zig
+~~~
 
 ### telescope
 
 * https://github.com/nvim-telescope/telescope.nvim
 * https://github.com/nvim-telescope/telescope-ui-select.nvim
 
-### neo-tree
+### nvim-tree
 
-* https://github.com/nvim-neo-tree/neo-tree.nvim
+* https://github.com/nvim-tree/nvim-tree.lua
 
 ### lualine
 
