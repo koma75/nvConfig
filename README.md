@@ -80,6 +80,7 @@ Resources I refered to other than the plugin documents are as follows.
 
 * https://www.youtube.com/watch?v=zHTeCSVAFNY&list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn
     * https://github.com/cpow/neovim-for-newbs
+* https://github.com/NvChad/NvChad
 
 ### Windows context menu
 
