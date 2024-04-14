@@ -101,6 +101,8 @@ choco install zig
 * https://zenn.dev/kaz399/articles/50b5f2fdc2afcf
 * https://github.com/kaz399/spzenhan.vim
 
+spzenhan.exe must be available in the %PATH%.
+
 References
 ------------------------------------------------------------------------
 
