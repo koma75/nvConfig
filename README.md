@@ -80,7 +80,7 @@ Resources I refered to other than the plugin documents are as follows.
 ### Windows context menu
 
 To add context menu, use the following (edited to be compatible with chocolaty neovim install).
-Original registry is [here](https://gist.github.com/JAffleck/2ba6ca0bd0d5545fd17c396357b9abf0):w
+Original registry is [here](https://gist.github.com/JAffleck/2ba6ca0bd0d5545fd17c396357b9abf0)
 
 ~~~ reg
 Windows Registry Editor Version 5.00
