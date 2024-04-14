@@ -6,6 +6,8 @@ vim.g.mapleader = " "
 vim.g.background = "light"
 
 vim.opt.swapfile = false
+vim.opt.nu = true
+vim.wo.relativenumber = true
 
 -- keymappings
 local map = vim.keymap.set
@@ -17,7 +19,6 @@ map('n', '<c-h>', ':wincmd h<CR>')
 map('n', '<c-l>', ':wincmd l<CR>')
 
 -- vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
--- vim.wo.number = true
 
 -- telescope
 map("n", "<leader>fw", "<cmd>Telescope live_grep<CR>", { desc = "Telescope Live grep" })
@@ -38,12 +39,10 @@ map(
   { desc = "Telescope Find all files" }
 )
 
--- bufferline
+-- bufferline (emulate NvChad mappings
+
 -- map("n", "<leader>b", "<cmd>enew<CR>", { desc = "Buffer New" })
-
 map("n", "<tab>", "<cmd>BufferLineCycleNext<CR>", { desc = "Buffer Goto next" })
-
 map("n", "<S-tab>", "<cmd>BufferLineCyclePrev<CR>", { desc = "Buffer Goto prev" })
-
 -- map("n", "<leader>x", "<cmd>", { desc = "Buffer Close" })
 

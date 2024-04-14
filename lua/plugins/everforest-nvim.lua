@@ -6,7 +6,7 @@ return {
   config = function()
     require("everforest").setup({
       background = "medium",
-      italics = true
+      -- italics = true
     })
     vim.cmd("colorscheme everforest")
     vim.cmd("set background=light")

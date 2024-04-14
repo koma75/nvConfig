@@ -8,7 +8,7 @@ Install
 
 ### Windows
 
-~~~ shell
+~~~shell
 git clone https://github.com/koma75/nvConfig.git %LOCALAPPDATA%\nvim && nvim
 ~~~
 
@@ -18,6 +18,8 @@ Plugins
 Some are not installed yet.
 
 ### im-select
+
+May replace with zenhan for windows usage.
 
 * https://github.com/keaising/im-select.nvim
 
