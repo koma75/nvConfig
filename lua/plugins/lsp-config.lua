@@ -9,32 +9,35 @@ return {
   {
     "williamboman/mason-lspconfig.nvim",
     lazy = false,
-    opts = {
-      auto_install = true,
-    },
+    config = function()
+      require("mason-lspconfig").setup {
+        ensure_installed = { "lua_ls" },
+        automatic_installation = true,
+      }
+    end
   },
   {
     "neovim/nvim-lspconfig",
     lazy = false,
-    dependencies = {
-      -- "hrsh7th/cmp-nvim-lsp"
-    },
     config = function()
       -- local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
       local lspconfig = require("lspconfig")
-      lspconfig.tsserver.setup({
-        -- capabilities = capabilities
-      })
-      lspconfig.solargraph.setup({
-        -- capabilities = capabilities
-      })
-      lspconfig.html.setup({
-        -- capabilities = capabilities
-      })
-      lspconfig.lua_ls.setup({
-        -- capabilities = capabilities
-      })
+      lspconfig.tsserver.setup({}) -- JS,TS
+      -- lspconfig.solargraph.setup({}) -- Ruby
+      lspconfig.html.setup({}) -- HTML
+      lspconfig.lua_ls.setup({}) -- Lua
+      -- lspconfig.bashls.setup({}) -- Bash
+      lspconfig.clangd.setup({}) -- C,C++
+      lspconfig.cmake.setup({}) -- CMake
+      lspconfig.cssls.setup({}) -- CSS
+      lspconfig.jsonls.setup({}) -- JSON
+      -- lspconfig.autotools_ls.setup({}) -- Automake, Make
+      lspconfig.pyright.setup({}) -- Python
+      -- lspconfig.rust_analyzer.setup({}) -- Rust
+      lspconfig.taplo.setup({}) -- TOML
+      lspconfig.yamlls.setup({}) -- YAML
+      lspconfig.zls.setup({}) -- Zig
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
