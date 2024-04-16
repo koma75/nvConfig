@@ -14,4 +14,10 @@ vim.opt.rtp:prepend(lazypath)
 require("vim-options")
 require("lazy").setup("plugins")
 
-vim.cmd('source vimscript\\spzenhan\\spzenhan.vim')
+local prefix
+if vim.fn.has("win32") == 1 then
+  -- spzenhan only for Windows
+  prefix = vim.fn.expand("$LOCALAPPDATA") .. "/nvim"
+  vim.cmd("source " .. prefix .. "/vimscript/spzenhan/spzenhan.vim")
+end
+
