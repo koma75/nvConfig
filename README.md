@@ -111,6 +111,8 @@ Resources I refered to other than the plugin documents are as follows.
 * https://www.youtube.com/watch?v=zHTeCSVAFNY&list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn
     * https://github.com/cpow/neovim-for-newbs
 * https://github.com/NvChad/NvChad
+* https://github.com/nvim-lua/kickstart.nvim
+    * https://github.com/dam9000/kickstart-modular.nvim
 
 ### Windows context menu
 
