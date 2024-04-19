@@ -1,10 +1,7 @@
 # 💤 LazyVim
 
-<<<<<<< HEAD
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
+personal neovim settings based on the starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
-=======
-personal neovim settings
 
 Install
 ------------------------------------------------------------------------
@@ -35,11 +32,12 @@ choco install font-hackgen-nerd
 Plugins
 ------------------------------------------------------------------------
 
-Some are not installed yet.
+Only notable changes to the LazyVim is described below.
 
 ### im-select
 
-May replace with zenhan for windows usage.
+Replaced with zenhan for windows usage.
+May be added in future for Linux/MacOS
 
 * https://github.com/keaising/im-select.nvim
 
@@ -63,37 +61,7 @@ choco install llvm
 choco install zig
 ~~~
 
-### telescope
-
-* https://github.com/nvim-telescope/telescope.nvim
-* https://github.com/nvim-telescope/telescope-ui-select.nvim
-
-### nvim-tree
-
-* https://github.com/nvim-tree/nvim-tree.lua
-
-### lualine
-
-* https://github.com/nvim-lualine/lualine.nvim
-
-### lsp-config
-
-* https://github.com/neovim/nvim-lspconfig
-* https://github.com/williamboman/mason-lspconfig.nvim
-* https://github.com/williamboman/mason.nvim
-
-### git
-
-* https://github.com/lewis6991/gitsigns.nvim
-* tpope/vim-fugitive
-
-### bufferline
-
-* https://github.com/akinsho/bufferline.nvim
-
-### indent-blackline
-
-* https://github.com/lukas-reineke/indent-blankline.nvim
+Compiler option is overridden.
 
 ### theme
 
@@ -174,4 +142,4 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\directory\background\shell\nvim\command]
 @="wt -p \"Windows PowerShell\" --title Neovim C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe \"%v\""
 ~~~
->>>>>>> 0cf5b6f691bfcdc8c4e5b9c0c16bbc3a3ffda16d
+
