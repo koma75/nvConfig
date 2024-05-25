@@ -29,6 +29,12 @@ You can install using chocolatey in Windows.
 choco install font-hackgen-nerd
 ~~~
 
+### Arch Linux
+
+~~~bash
+git clone https://github.com/koma75/nvConfig.git ~/.config/nvim && nvim
+~~~
+
 Plugins
 ------------------------------------------------------------------------
 

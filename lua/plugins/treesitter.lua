@@ -15,7 +15,7 @@ return {
       end
       -- for windows, clang or zig should be used
       local install = require("nvim-treesitter.install")
-      install.compilers = { "zig", "clang" }
+      install.compilers = { "clang" , "zig" }
       require("nvim-treesitter.configs").setup(opts)
     end,
   },
