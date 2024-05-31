@@ -15,7 +15,7 @@ git clone https://github.com/koma75/nvConfig.git %LOCALAPPDATA%\nvim && nvim
 Some pre-requisites should be installed as well.
 
 ~~~bash
-choco install llvm zig ripgrep git lazygit fdfind
+choco install llvm zig ripgrep git lazygit fd
 ~~~
 
 ### Fonts
