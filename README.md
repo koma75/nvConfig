@@ -29,6 +29,12 @@ You can install using chocolatey in Windows.
 choco install font-hackgen-nerd
 ~~~
 
+On Arch, install aur package `ttf-hackgen`
+
+~~~bash
+yay -Sy ttf-hackgen
+~~~
+
 ### Arch Linux
 
 ~~~bash
